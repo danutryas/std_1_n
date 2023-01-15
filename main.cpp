@@ -210,6 +210,8 @@ int main()
                 cout << "Masukkan nama folder yang dicari: ";cin >> folderName;
                 showDataFolder(ListFolder,folderName);
             }
+        }else if (choosenMenu == 13){
+            showAllFileFromAllFolder(ListFile,ListFolder);
         }else if (choosenMenu == 0){
             break;
         }else {

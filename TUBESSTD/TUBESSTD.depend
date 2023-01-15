@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1673675969 source:c:\users\user\documents\github\std_1_n\file.cpp
+	"MLL.h"
+	"file.h"
+	"folder.h"
+
+1673678410 c:\users\user\documents\github\std_1_n\mll.h
+	<iostream>
+	"file.h"
+	"folder.h"
+
+1673675969 c:\users\user\documents\github\std_1_n\file.h
+	"folder.h"
+	<iostream>
+
+1673675969 c:\users\user\documents\github\std_1_n\folder.h
+	<iostream>
+	"file.h"
+
+1673675969 source:c:\users\user\documents\github\std_1_n\folder.cpp
+	"MLL.h"
+	"file.h"
+	"folder.h"
+
+1673678586 source:c:\users\user\documents\github\std_1_n\main.cpp
+	"MLL.h"
+	"file.h"
+	"folder.h"
+	<iostream>
+
+1673683765 source:c:\users\user\documents\github\std_1_n\mll.cpp
+	<iostream>
+	<stdlib.h>
+	"MLL.h"
+	"file.h"
+	"folder.h"
+

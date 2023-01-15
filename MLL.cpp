@@ -167,7 +167,20 @@ void findFolderNameFromFileY(fileList L,string fileName){
         cout << "File tidak terdapat di folder" << endl;
     }
 };
+void showAllFileFromAllFolder(fileList ListFile,folderList ListFolder){
+    adrFolder pFolder = first(ListFolder);
+        cout << "Files of: "<< info(pFolder).name<<endl;
+        showAllFileFromFolderX(ListFile,ListFolder,info(pFolder).name);
+        cout << endl;
+        pFolder = next(pFolder);
+    while (pFolder != first(ListFolder)){
+        cout << "Files of:       "<< info(pFolder).name<<endl;
+        showAllFileFromFolderX(ListFile,ListFolder,info(pFolder).name);
+        cout << endl;
+        pFolder = next(pFolder);
+    }
 
+};
 // additional Function
 void showMenu() {
     clearConsole();
@@ -185,13 +198,14 @@ void showMenu() {
     cout << "|10. Mencari nama Folder dari File Y            |"<<endl;
     cout << "|11. Menampilkan Folder dengan file terbanyak   |"<<endl;
     cout << "|12. Menampilkan Data folder X                  |"<<endl;
+    cout << "|13. Menampilkan Semua Folder dan File          |"<<endl;
     cout << "| 0. Exit                                       |"<<endl;
     cout << "================================================="<<endl;
 }
 int getMenu() {
     showMenu();
     int chooseMenu;
-    cout << "Silhkan pilih menu(0-13): ";cin >> chooseMenu;
+    cout << "Silahkan pilih menu(0-13): ";cin >> chooseMenu;
     clearConsole();
     return chooseMenu;
 }

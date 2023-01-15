@@ -45,5 +45,6 @@ int getMenu();
 bool backMenu();
 void runProgram(int programNumber);
 void clearConsole();
+void showAllFileFromAllFolder(fileList ListFile,folderList ListFolder);
 
 #endif // MLL_H_INCLUDED
